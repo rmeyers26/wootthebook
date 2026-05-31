@@ -222,6 +222,85 @@ body {
   background: #fff;
 }
 
+.press-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #999;
+  margin-bottom: 0.75rem;
+}
+
+.reader-reviews-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin: 3.5rem 0 2rem;
+}
+
+.reader-reviews {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.reader-review {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: 3px;
+  padding: 1.5rem;
+  margin: 0;
+}
+
+.reader-review p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--mid);
+  margin-bottom: 1rem;
+}
+
+.reader-review footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.reader-review cite {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--dark);
+}
+
+.stars {
+  color: var(--gold);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.amazon-cta {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+}
+
+.amazon-cta a {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.amazon-cta a:hover {
+  color: var(--dark);
+}
+
 .review-list li a {
   color: inherit;
   text-decoration: underline;
@@ -309,6 +388,10 @@ body {
   }
 
   .story-images {
+    grid-template-columns: 1fr;
+  }
+
+  .reader-reviews {
     grid-template-columns: 1fr;
   }
 
