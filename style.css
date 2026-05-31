@@ -127,6 +127,17 @@ body {
   margin-bottom: 2rem;
 }
 
+.availability a {
+  color: var(--mid);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.availability a:hover {
+  color: var(--dark);
+}
+
 .cta-block {
   display: flex;
   flex-direction: column;
