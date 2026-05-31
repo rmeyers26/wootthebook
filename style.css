@@ -69,6 +69,12 @@ body {
   color: var(--accent);
 }
 
+/* ---- Nav multi-link ---- */
+.site-nav {
+  display: flex;
+  gap: 2rem;
+}
+
 /* ---- Hero ---- */
 .hero {
   padding: 80px 2rem 80px;
@@ -152,6 +158,150 @@ body {
   font-size: 0.9rem;
   color: var(--mid);
   font-style: italic;
+}
+
+/* ---- Badges ---- */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 1rem 0 1.25rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.3rem 0.75rem;
+  border: 1.5px solid var(--gold);
+  border-radius: 20px;
+  color: var(--dark);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.gift-prompt {
+  font-size: 0.9rem;
+  color: var(--mid);
+  margin-top: 0.25rem;
+}
+
+/* ---- Look Inside ---- */
+.look-inside {
+  background: #fff;
+  padding: 80px 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.section-eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.look-inside h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+
+.excerpt-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 4px;
+  padding: 2.5rem;
+  max-width: 780px;
+}
+
+.excerpt-text p {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--mid);
+  margin-bottom: 1.25rem;
+}
+
+.excerpt-text p:last-child {
+  margin-bottom: 0;
+}
+
+.excerpt-cta {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+/* ---- Pigeon Facts ---- */
+.pigeon-facts {
+  background: var(--dark);
+  padding: 80px 2rem;
+  color: #fff;
+}
+
+.pigeon-facts .section-eyebrow {
+  color: var(--gold);
+}
+
+.pigeon-facts h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.25rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.facts-intro {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.65);
+  max-width: 600px;
+  margin-bottom: 3rem;
+  line-height: 1.7;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.fact-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 1.75rem;
+  transition: background 0.2s;
+}
+
+.fact-card:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.fact-icon {
+  font-size: 1.75rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.fact-card h3 {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
+.fact-card p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,0.75);
 }
 
 /* ---- Our Story ---- */
@@ -393,6 +543,14 @@ body {
 
   .reader-reviews {
     grid-template-columns: 1fr;
+  }
+
+  .facts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav {
+    gap: 1rem;
   }
 
   .header-inner {
