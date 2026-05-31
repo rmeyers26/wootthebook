@@ -176,6 +176,15 @@ body {
   color: var(--dark);
 }
 
+.synopsis {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--mid);
+  max-width: 720px;
+  margin-bottom: 3rem;
+}
+
 .story-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
