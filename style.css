@@ -213,6 +213,60 @@ body {
   background: #fff;
 }
 
+.review-list li a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+}
+
+.review-list li a:hover {
+  color: var(--accent);
+}
+
+/* ---- Social ---- */
+.social {
+  background: #fff;
+  padding: 60px 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+.social-list a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--mid);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  background: var(--cream);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.social-list a:hover {
+  color: var(--dark);
+  border-color: var(--dark);
+  background: #fff;
+}
+
+.social-list svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
 /* ---- Footer ---- */
 .site-footer {
   text-align: center;
