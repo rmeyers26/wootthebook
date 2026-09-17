@@ -102,6 +102,8 @@ body {
 
 .hero-image img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: 4px;
   box-shadow: 0 12px 48px rgba(0,0,0,0.18);
 }
@@ -361,6 +363,7 @@ body {
 
 .story-images figure img {
   width: 100%;
+  height: auto;
   border-radius: 3px;
   box-shadow: 0 6px 24px rgba(0,0,0,0.10);
   display: block;
